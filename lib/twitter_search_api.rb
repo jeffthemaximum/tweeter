@@ -2,7 +2,6 @@
 class TwitterSearchAPI
 
   def initialize
-    binding.pry
     @client = TwitterClientAPI.client
   end
 
