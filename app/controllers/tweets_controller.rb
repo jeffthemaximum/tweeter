@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
-  def new
+  def hello
+    render html: "Cindy and Jeff's Tweet library rulez"
   end
 end

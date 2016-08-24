@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'tweets/new'
+  get 'tweets/hello'
 
-  root 'application#hello'
+  root 'tweets#hello'
 end
