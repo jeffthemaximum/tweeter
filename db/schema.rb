@@ -10,15 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160824231108) do
+ActiveRecord::Schema.define(version: 20160825035516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "tweets", force: :cascade do |t|
-    t.jsonb    "response"
+  create_table "stored_queries", force: :cascade do |t|
+    t.text     "search"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tweets", force: :cascade do |t|
+    t.jsonb    "response"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "stored_query_id"
+    t.index ["stored_query_id"], name: "index_tweets_on_stored_query_id", using: :btree
   end
 
 end

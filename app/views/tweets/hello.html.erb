@@ -5,3 +5,9 @@
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
 <% end %>
+
+<%= form_tag("tweets/new", method: "post") do %>
+  <%= label_tag(:s, "store search:") %>
+  <%= text_field_tag(:s) %>
+  <%= submit_tag("Store") %>
+<% end %>
