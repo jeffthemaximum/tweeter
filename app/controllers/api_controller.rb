@@ -1,6 +1,5 @@
-class StoredQueryController < ApplicationController
-  
-  def create
+class ApiController < ApplicationController
+  def tweet_create
     @stored_query = StoredQuery.find_or_create_by(search: store_params[:s]) do |sq|
       if sq.new_record?
         @new = true
