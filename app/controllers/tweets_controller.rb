@@ -10,7 +10,7 @@ class TweetsController < ApplicationController
     # @results.each do |result|
     #   tweet = Tweet.find_or_create_by(search: store_params[:s], response: result.to_json)
     # end
-    @tweet = Tweet.find_or_create_by(search: store_params[:s])
+    # @tweet = Tweet.find_or_create_by(search: store_params[:s])
   end
 
   private

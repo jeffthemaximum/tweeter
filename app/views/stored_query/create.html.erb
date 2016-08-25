@@ -1,0 +1,9 @@
+<% if @new %>
+  <p>
+    Stored <%= @stored_query.search %>
+  </p>
+<% else %>
+  <p>
+    We're already tracking <%= @stored_query.search %>
+  </p>
+<% end %>

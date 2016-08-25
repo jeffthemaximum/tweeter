@@ -1,0 +1,2 @@
+module StoredQueryHelper
+end

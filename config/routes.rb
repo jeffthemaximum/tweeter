@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  post 'tweets/new'
+  post 'stored_query/create'
 
   get 'search', to: 'search#index'
 

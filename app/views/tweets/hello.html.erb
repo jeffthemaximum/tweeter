@@ -6,7 +6,7 @@
   <%= submit_tag("Search") %>
 <% end %>
 
-<%= form_tag("tweets/new", method: "post") do %>
+<%= form_tag("stored_query/create", method: "post") do %>
   <%= label_tag(:s, "store search:") %>
   <%= text_field_tag(:s) %>
   <%= submit_tag("Store") %>
