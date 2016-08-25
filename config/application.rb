@@ -14,6 +14,7 @@ module Tweeter
 
     config.eager_load_paths += %W(
       #{config.root}/lib
+      #{config.root}/app/workers
     )
   end
 end
