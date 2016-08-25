@@ -1,8 +1,7 @@
 class SearchController < ApplicationController
-  require 'twitter_search_api'
   def index
     if params[:q]
-      t = TwitterSearchAPI::TwitterSearchAPI.new
+      t = TwitterSearchAPI.new
       @results = t.query(search_params[:q], json=false)
       render 'results'
     end
