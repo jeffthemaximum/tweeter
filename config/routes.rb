@@ -1,4 +1,6 @@
+
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   get 'api/tweet_create'
 
   post 'stored_query/create'

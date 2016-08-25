@@ -11,6 +11,8 @@ gem 'jbuilder',     '2.4.1'
 gem 'twitter',      '5.16.0'
 gem 'pg',           '0.18.4'
 gem 'sidekiq'
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 group :development, :test do
   gem 'byebug',  '9.0.0', platform: :mri
